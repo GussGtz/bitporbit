@@ -77,3 +77,76 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.hero-section {
+  min-height: 95vh;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #f1f4f9, #ffffff);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #0d6efd, #6610f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-sub {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #0d6efd, #6610f2);
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  box-shadow: 0 10px 20px rgba(13, 110, 253, 0.3);
+  transform: translateY(-2px);
+}
+
+.animate-title {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 0.9s ease forwards;
+}
+
+.animate-subtitle {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.animate-button {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body.dark-mode .hero-section {
+  background: linear-gradient(to right, #1a1a1a, #121212);
+}
+
+body.dark-mode .text-muted {
+  color: #ccc !important;
+}
+
+body.dark-mode .btn-gradient {
+  background: linear-gradient(to right, #198754, #157347);
+}

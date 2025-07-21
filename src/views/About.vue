@@ -2,11 +2,11 @@
   <section class="about-section py-5" data-aos="fade-up">
     <div class="container">
       <div class="row align-items-center g-5">
-        <!-- Imagen del profesor -->
+        <!-- Imagen real del profesor -->
         <div class="col-lg-5 text-center">
           <div class="position-relative d-inline-block">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+              src="https://innovacodeacademy.netlify.app/profe2.png"
               alt="Mtro. Rafael"
               class="img-fluid rounded-circle border border-4 border-primary shadow-lg animate-float"
               style="max-width: 280px"
@@ -74,7 +74,7 @@
   z-index: -1;
 }
 
-/* Utilidades */
+/* Posicionamiento */
 .position-relative { position: relative; }
 .position-absolute { position: absolute; }
 
