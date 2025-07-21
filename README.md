@@ -6,5 +6,5 @@ Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://
 =======
 # bitporbit
 plataforma educativa que ofrece cursos de programación básica para principiantes, diseñada para enseñar desde cero de forma práctica, interactiva y accesible. 
-De Gustavo Gutierrez Canul y Edwin Gopar Avila.
+De Gustavo Gutierrez Canul y Edwin Gopar Avila. IDYGS93
 
