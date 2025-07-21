@@ -1,0 +1,223 @@
+/* ======= ESTILOS PERSONALIZADOS ======= */
+
+/* Reset y fuente global */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Enlaces */
+a,
+.nav-link {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover,
+.nav-link:hover {
+  color: #0d6efd !important;
+  transform: scale(1.05);
+}
+
+/* Botones */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Secciones */
+section {
+  padding: 60px 0;
+}
+
+/* Animación de entrada suave */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Navbar fix */
+.navbar {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Footer estilizado */
+footer {
+  background: linear-gradient(to right, #0d6efd, #0a58ca);
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Títulos decorativos */
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h1::after,
+h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #0d6efd;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* === DARK MODE === */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode a,
+body.dark-mode .nav-link {
+  color: #f8f9fa !important;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #333;
+}
+
+body.dark-mode footer {
+  background: linear-gradient(to right, #222, #000);
+}
+
+body.dark-mode .btn-outline-light {
+  border-color: #ccc;
+  color: #ccc;
+}
+/* Estilos generales de tarjetas */
+.card {
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Modo oscuro general para tarjetas */
+body.dark-mode .card {
+  background-color: #1f1f1f !important;
+  color: #f1f1f1 !important;
+  border-color: #198754 !important; /* verde éxito */
+}
+
+body.dark-mode .card .card-text {
+  color: #ccc !important;
+}
+
+body.dark-mode .card .card-title {
+  color: #ffffff !important;
+}
+
+body.dark-mode .card a.btn {
+  color: #198754 !important;
+  border-color: #198754 !important;
+}
+
+/* Íconos en modo oscuro */
+body.dark-mode .card i {
+  color: #20c997 !important; /* un verde suave que destaca */
+}
+<style scoped>
+.hero-section {
+  min-height: 90vh;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #f1f4f9, #ffffff);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.hero-code {
+  font-family: 'Fira Code', monospace;
+  font-size: 1.5rem;
+  white-space: pre-wrap;
+  color: #000;
+  line-height: 1.5;
+}
+
+.hero-code .brace {
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+.hero-code .strike {
+  text-decoration: line-through;
+  color: #dc3545;
+}
+
+.hero-code .highlight {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #0d6efd, #6610f2);
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  box-shadow: 0 10px 20px rgba(13, 110, 253, 0.3);
+  transform: translateY(-2px);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-button {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/* Dark mode */
+body.dark-mode .hero-section {
+  background: linear-gradient(to right, #1a1a1a, #121212);
+}
+
+body.dark-mode .hero-code {
+  color: #eee;
+}
+
+body.dark-mode .hero-sub {
+  color: #ccc;
+}
+
+body.dark-mode .btn-gradient {
+  background: linear-gradient(to right, #198754, #157347);
+}
+</style>
